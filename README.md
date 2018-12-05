@@ -37,19 +37,19 @@ $ git clone https://github.com/PiroHiroPiro/author_paper_identification_challeng
 ```
 $ docker build -t kdd_2013 ./author_paper_identification_challenge
 Sending build context to Docker daemon    891MB
-Step 1/8 : FROM python:3.6
+Step 1/10 : FROM python:3.6
  ---> 1ec4d11819ad
-Step 2/8 : ENV PYTHONUNBUFFERED=1
+Step 2/10 : ENV PYTHONUNBUFFERED=1
  ---> Running in c329ac171020
 Removing intermediate container c329ac171020
  ---> 221b18916b47
-Step 3/8 : WORKDIR /usr/src/work
+Step 3/10 : WORKDIR /usr/src/work
  ---> Running in a2e78e1fb7d6
 Removing intermediate container a2e78e1fb7d6
  ---> 0360225bdf50
-Step 4/8 : COPY Pipfile Pipfile.lock ./
+Step 4/10 : COPY Pipfile Pipfile.lock ./
  ---> efe893a647f9
-Step 5/8 : RUN pip install pipenv  && pipenv install --system
+Step 5/10 : RUN pip install pipenv  && pipenv install --system
  ---> Running in a5de53ab5696
 Collecting pipenv
   Downloading https://files.pythonhosted.org/packages/13/b4/3ffa55f77161cff9a5220f162670f7c5eb00df52e00939e203f601b0f579/pipenv-2018.11.26-py3-none-any.whl (5.2MB)
@@ -67,13 +67,19 @@ Installing dependencies from Pipfile.lock (5144eb)…
 Ignoring appnope: markers 'sys_platform == "darwin"' don't match your environment
 Removing intermediate container a5de53ab5696
  ---> 0a47533afea0
-Step 6/8 : RUN mkdir data
+Step 6/10 : RUN mkdir data
  ---> Running in 3be52847b544
 Removing intermediate container 3be52847b544
  ---> 023e01cac8ac
-Step 7/8 : COPY ./data ./data
+Step 7/10 : COPY ./data ./data
  ---> 5baa1440ed11
-Step 8/8 : CMD ["pipenv", "run", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root"]
+Step 8/10 : RUN mkdir confirmation
+ ---> Running in 9edb048c763f
+Removing intermediate container 9edb048c763f
+ ---> 92602c60444c
+Step 9/10 : COPY ./confirmation ./confirmation
+ ---> df961fdc40c9
+Step 10/10 : CMD ["pipenv", "run", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root"]
  ---> Running in 694738a3173e
 Removing intermediate container 694738a3173e
  ---> 73646d129358
