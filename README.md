@@ -116,7 +116,7 @@ Virtualenv location: /root/.local/share/virtualenvs/work-ShcGkFHx
 
 ### 6.コンソールの最後の行に書かれているURL(http://127.0.0.1:8888/?token=TOKEN)を開く．
 
-## Jupyter Notebookの起動
+## (2回目以降)Jupyter Notebookの起動
 ```
 $ docker start -a kdd_2013
 [I 04:51:21.273 NotebookApp] Serving notebooks from local directory: /usr/src/work
