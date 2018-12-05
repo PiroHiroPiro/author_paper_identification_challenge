@@ -98,14 +98,14 @@ Virtualenv location: /root/.local/share/virtualenvs/work-ShcGkFHx
 [I 03:21:23.943 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
 [I 03:21:24.586 NotebookApp] Serving notebooks from local directory: /usr/src/work
 [I 03:21:24.586 NotebookApp] The Jupyter Notebook is running at:
-[I 03:21:24.586 NotebookApp] http://(CONTAINER_ID or 127.0.0.1):8888/?token=TOKEN
+[I 03:21:24.586 NotebookApp] http://(CONTAINER_ID or 127.0.0.1):8888/?token=TOKEN
 [I 03:21:24.586 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 [W 03:21:24.588 NotebookApp] No web browser found: could not locate runnable browser.
 [C 03:21:24.588 NotebookApp]
 
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
-        http://(CONTAINER_ID or 127.0.0.1):8888/?token=TOKEN
+        http://(CONTAINER_ID or 127.0.0.1):8888/?token=TOKEN
 ```
 
-### 6.コンソールの最後の行に書かれているURL(http://127.0.0.1:8888/?token=TOKEN)を開く．
+### 6.コンソールの最後の行に書かれているURL(http://127.0.0.1:8888/?token=TOKEN)を開く．
