@@ -136,4 +136,5 @@ pip-selfcheck.json
 
 # End of https://www.gitignore.io/api/python,virtualenv
 
-data
+data/*
+!.gitkeep
