@@ -1,7 +1,5 @@
-# KDD Cup 2013 - Author-Paper Identification Challenge (Track 1)
+# KDD Cup 2013 - Author-Paper Identification Challenge
 これはKaggleの[KDD Cup 2013 - Author-Paper Identification Challenge (Track 1)](https://www.kaggle.com/c/kdd-cup-2013-author-paper-identification-challenge/)にチャレンジする環境を提供するリポジトリです，
-
----
 
 ## 初期設定
 ### git
@@ -23,8 +21,6 @@ Docker version 18.09.0, build 4d60db4
 
 ### Kaggleのアカウント作成
 データセットは，コンペティションの規約に同意してからダウンロードするので，まず[Kaggle](https://www.kaggle.com/)のアカウントを作成してください．
-
----
 
 ## 環境構築手順
 ### 1.RepositoryをCloneする.
