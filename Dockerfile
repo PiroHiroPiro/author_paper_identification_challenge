@@ -12,4 +12,7 @@ RUN pip install pipenv \
 RUN mkdir data
 COPY ./data ./data
 
+RUN mkdir confirmation
+COPY ./confirmation ./confirmation
+
 CMD ["pipenv", "run", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root"]

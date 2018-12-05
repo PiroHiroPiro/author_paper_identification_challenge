@@ -83,7 +83,7 @@ Successfully tagged kdd_2013:latest
 
 ### 5.DockerイメージからDockerコンテナを起動させ，続いてjupyter notebookを起動させる．
 ```
-$ docker run -it -p 8888:8888 kdd_2013
+$ docker run -it --name kdd_2013 -p 8888:8888 kdd_2013
 Creating a virtualenv for this project…
 Pipfile: /usr/src/work/Pipfile
 Using /usr/local/bin/python (3.6.7) to create virtualenv…
@@ -109,3 +109,18 @@ Virtualenv location: /root/.local/share/virtualenvs/work-ShcGkFHx
 ```
 
 ### 6.コンソールの最後の行に書かれているURL(http://127.0.0.1:8888/?token=TOKEN)を開く．
+
+## Jupyter Notebookの起動
+```
+$ docker start -a kdd_2013
+[I 04:51:21.273 NotebookApp] Serving notebooks from local directory: /usr/src/work
+[I 04:51:21.273 NotebookApp] The Jupyter Notebook is running at:
+[I 04:51:21.273 NotebookApp] http://(CONTAINER_ID or 127.0.0.1):8888/?token=TOKEN
+[I 04:51:21.273 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 04:51:21.275 NotebookApp] No web browser found: could not locate runnable browser.
+[C 04:51:21.276 NotebookApp]
+
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://(CONTAINER_ID or 127.0.0.1):8888/?token=TOKEN
+```
