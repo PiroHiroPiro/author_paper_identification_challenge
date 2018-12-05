@@ -23,7 +23,7 @@ Docker version 18.09.0, build 4d60db4
 データセットは，コンペティションの規約に同意してからダウンロードするので，まず[Kaggle](https://www.kaggle.com/)のアカウントを作成してください．
 
 ## 環境構築手順
-### 1.RepositoryをCloneする.
+### 1.リポジトリをCloneする.
 ```
 $ git clone https://github.com/PiroHiroPiro/author_paper_identification_challenge.git
 ```
@@ -35,7 +35,7 @@ $ git clone https://github.com/PiroHiroPiro/author_paper_identification_challeng
 
 ### 4.DockerfileからDockerイメージを作成する．
 ```
-$ docker build -t kdd_2013 .
+$ docker build -t kdd_2013 ./author_paper_identification_challenge
 Sending build context to Docker daemon    891MB
 Step 1/8 : FROM python:3.6
  ---> 1ec4d11819ad
