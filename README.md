@@ -11,7 +11,7 @@ git version 2.14.0
 ```
 
 ### Docker
-[Dockerの公式サイト](https://www.docker.com/get-started)からダウンロードし，インストールしてください．
+[Dockerの公式サイト](https://www.docker.com/get-started)からダウンロードし，インストールしてください．
 `docker --version`を入力して，インストールされているバージョンが表示されたら問題ありません．
 
 ```
@@ -28,7 +28,7 @@ Docker version 18.09.0, build 4d60db4
 $ git clone https://github.com/PiroHiroPiro/author_paper_identification_challenge.git
 ```
 ### 2.KDD Cup 2013のページからデータセットをダウンロードする．
-[KDD Cup 2013のデータのページ](https://www.kaggle.com/c/kdd-cup-2013-author-paper-identification-challenge/data)のから必要なデータをダウンロードする．この時モーダルが表示され，規約に同意するか聞かれるので`I Understand and Accept`をクリックしてください．
+[KDD Cup 2013のデータのページ](https://www.kaggle.com/c/kdd-cup-2013-author-paper-identification-challenge/data)のから必要なデータをダウンロードする．この時モーダルが表示され，規約に同意するか聞かれるので`I Understand and Accept`をクリックしてください．
 ※予めログインが必要です．
 
 ### 3.ダウンロードされたデータをクローンしてきたリポジトリの中のdataディレクトリに移動させてください．
