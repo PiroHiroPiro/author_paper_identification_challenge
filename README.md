@@ -1,5 +1,5 @@
 # KDD Cup 2013 - Author-Paper Identification Challenge
-これはKaggleの[KDD Cup 2013 - Author-Paper Identification Challenge (Track 1)](https://www.kaggle.com/c/kdd-cup-2013-author-paper-identification-challenge/)にチャレンジする環境を提供するリポジトリです，
+これはKaggleの[KDD Cup 2013 - Author-Paper Identification Challenge (Track 1)](https://www.kaggle.com/c/kdd-cup-2013-author-paper-identification-challenge/)にチャレンジする環境を提供するリポジトリです.
 
 ## 初期設定
 ### git
@@ -31,7 +31,7 @@ $ git clone https://github.com/PiroHiroPiro/author_paper_identification_challeng
 [KDD Cup 2013のデータのページ](https://www.kaggle.com/c/kdd-cup-2013-author-paper-identification-challenge/data)のから必要なデータをダウンロードする．この時モーダルが表示され，規約に同意するか聞かれるので`I Understand and Accept`をクリックしてください．
 ※予めログインが必要です．
 
-### 3.ダウンロードされたデータをクローンしてきたリポジトリの中のdataディレクトリに移動させてください．
+### 3.ダウンロードされたデータをクローンしてきたリポジトリの中のdataディレクトリに移動させる．
 
 ### 4.DockerfileからDockerイメージを作成する．
 ```
@@ -87,7 +87,7 @@ Successfully built 586fcf1e0299
 Successfully tagged kdd_2013:latest
 ```
 
-### 5.DockerイメージからDockerコンテナを起動させ，続いてjupyter notebookを起動させる．
+### 5.DockerイメージからDockerコンテナを起動させる．
 ```
 $ docker run -it --name kdd_2013 -p 8888:8888 kdd_2013
 Creating a virtualenv for this project…
@@ -114,9 +114,9 @@ Virtualenv location: /root/.local/share/virtualenvs/work-ShcGkFHx
         http://(CONTAINER_ID or 127.0.0.1):8888/?token=TOKEN
 ```
 
-### 6.コンソールの最後の行に書かれているURL(http://127.0.0.1:8888/?token=TOKEN)を開く．
+### 6.コンソールの最後の行に書かれているURL([http://127.0.0.1:8888/?token=TOKEN](http://127.0.0.1:8888/?token=TOKEN))を開く．
 
-## (2回目以降)Jupyter Notebookの起動
+## (2回目以降) Jupyter Notebookの起動
 ```
 $ docker start -a kdd_2013
 [I 04:51:21.273 NotebookApp] Serving notebooks from local directory: /usr/src/work
