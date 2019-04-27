@@ -1,18 +1,15 @@
-FROM python:3.6
+FROM python:3.7
 
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /usr/src/work
+WORKDIR /usr/src/source
 
-COPY Pipfile Pipfile.lock ./
+ENV PIPENV_VENV_IN_PROJECT=1
 
-RUN pip install pipenv \
- && pipenv install --system
+COPY ./source/Pipfile ./
 
-RUN mkdir data
-COPY ./data ./data
+RUN pip install --upgrade pip \
+    && pip install pipenv \
+    && pipenv install --skip-lock --system
 
-RUN mkdir confirmation
-COPY ./confirmation ./confirmation
-
-CMD ["pipenv", "run", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root"]
