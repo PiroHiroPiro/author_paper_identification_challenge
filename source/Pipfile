@@ -13,6 +13,11 @@ scipy = "*"
 matplotlib = "*"
 scikit-learn = "*"
 gensim = "*"
+nltk = "*"
+stanfordnlp = "*"
+sentencepiece = "*"
+joblib = "*"
+seaborn = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
